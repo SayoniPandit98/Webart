@@ -1,8 +1,87 @@
-.Signup{
-        display: grid;
-        gap: 20px;
-       
-        input{
-           
+.Signup {
+  display: grid;
+  gap: 20px;
+}
+
+.Shop {
+        padding: 5%;
+  display: flex;
+//   width: 100%;
+  justify-content: space-around;
+  .List {
+    display: grid;
+    gap: 30px;
+    .Cart {
+      padding: 20px;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      // border-radius: 8px;
+      // width: 30%;
+      height: 200px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      .Image {
+        img {
+          width: 200px;
         }
+      }
+      .Details {
+        text-align: left;
+        .Name {
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .Details {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+      .Add {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        button {
+          // width: 50%;
+        }
+      }
+    }
+  }
+}
+.Category {
+  .Title {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  background: #f4f4f4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  padding: 30px;
+  height: fit-content;
+  width: 30%;
+  .CategoryCompMain {
+    .CategoryComp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-size: 24px;
+        color: #9b9390;
+      }
+    }
+    .Filters{
+        background: white;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: left;
+        display: grid;
+        gap: 10px;
+    li{
+        list-style-type: none;
+        font-size: 18px;
+    }
+    }
+  }
+
 }
